@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(/fonts/LexendDeca-Regular.ttf) format('ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url(/fonts/Big_Shoulders_Display/BigShouldersDisplay-Regular.ttf) format('ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {font-size: 15px}
+}
+// Vars
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$paragraphs: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+ //Sizes
+ $tablet: 768px;
+ $mobile: 425px;
+
+
+
+
+/*** TABLE OF CONTENTS
+
+    1- BOXES
+    2- IMAGES AND HEADINGS
+    3- PARAGRAPHS
+    4- BUTTONS
+    5- MEDIA QUERIES
+        -1- TABLET
+        -2- MOBILE
+
+***/
+
+
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+ .attribution a:hover {
+   color: hsl(229, 21%, 39%); 
+   transition: all 0.1s linear; 
+   font-size: 15px;
+ }
+ .attribution a:active { font-size: 11px; }
+
+// The whole page
+.container {
+    // border: 8px solid rgb(0, 0, 0);
+    height: 100vh;
+}
+
+// BOXES
+.boxes {
+    // border: 4px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+// Target all boxes (It's not the same as .boxes)
+[class^=box-] {
+    height: 60vh;
+    width: 300px;
+
+}
+.box-1 {
+    background-color: $bright-orange;
+    border-radius: 15px 0 0 15px;
+
+}
+.box-2 {
+    background-color: $dark-cyan;
+
+}
+.box-3 {
+    background-color: $very-dark-cyan;
+    border-radius: 0 10px 10px 0;
+
+}
+
+// IMAGES AND HEADINGS
+.images {margin: 30px;}
+.heading {
+    color: $paragraphs; 
+    font-size: 30px;
+    font-family: 'Big Shoulders Display'; 
+    margin-left: 30px;
+    transform: scaleY(1.2); // Scale this lil' bi-
+}
+
+// PARAGRAPHS
+.para {
+    color: $paragraphs;
+    opacity: 0.8;
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-right: 65px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+// BUTTONS
+[id ^="button-"] {
+    width: 150px;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 30px;
+    text-align: center;
+    background-color: $very-light-gray;
+    font-size: 18px;
+}
+
+#button-1 {color: $bright-orange;}
+#button-2 {color: $dark-cyan;}
+#button-3 {color: $very-dark-cyan;}
+
+#button-1:active {background-color: $bright-orange; color: white;}
+#button-2:active {background-color: $dark-cyan;     color: white;}
+#button-3:active {background-color: $very-dark-cyan; color: white;}
+
+// MEDIA QUERIES
+
+ // TABLET
+@media (max-width: $tablet) {
+
+    [id ^="button-"] {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+}
+ // MOBILE
+ @media (max-width: $mobile) {
+
+    .boxes {
+        flex-direction: column;
+        margin-top: 65%;
+    }
+
+    [id ^="button-"] {
+        // padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .para {font-size: 13px;}
+
+    .box-1 {border-radius: 10px 10px 0 0;}
+    .box-3 {border-radius: 0 0 10px 10px;}
+ }
