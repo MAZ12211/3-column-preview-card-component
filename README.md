@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-3columncard-using-scss-and-flexbox-rZKHof84l)
+- Live Site URL: [Live Site](https://maz12211.github.io/3-column-preview-card-component.github.io/)
 
 ## My process
 
