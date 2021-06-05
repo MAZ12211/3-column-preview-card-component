@@ -68,6 +68,8 @@ I should use VARS and media queries more as they were so helpful. I should make 
 
 - [5 CSS mistakes that I see way too often](https://www.youtube.com/watch?v=iHEkRIF7zxI) - This video helped me for organizing my CSS/Scss code.
 - [Learn CSS Media Queries by Building 3 Projects - Full Course](https://www.youtube.com/watch?v=aook54SsfhY) - This is an amazing video which helped me finally understand media queries and scss. I'd recommend it to anyone still learning this concept.
+- [Convertio](https://convertio.co/) - Used for converting images.
+- [postimages](https://postimages.org/) - Used for to get  permanent links for images.
 
 ## Author
 
